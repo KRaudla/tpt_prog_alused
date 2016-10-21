@@ -21,8 +21,13 @@ public class Time {
         System.out.println("Seconds remaining " +
                 "in the day: "+Math.round(maxSeconds-secSinMidnight));
         float percent = (secSinMidnight/maxSeconds)*100;
-        System.out.println("The percentage of the day that has passed: "+
-                Math.round(percent)+"%");
+        /*printf: The format specifier %.2f indicates that the following value should be
+        displayed as floating-point, rounded to two decimal places
+        %c defines the special character to print out '%'
+        */
+        System.out.printf("The percentage of the day that has passed: %.2f%c",
+                percent,'%');
+
 
 
     }
